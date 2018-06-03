@@ -1,0 +1,10 @@
+  <%@movies.each do |movie| %>
+
+    <img src='<%= movie["Poster"]%>'>
+    <a href='/movie_info/<%= movie["imdbID"]%>'>
+    <%= movie["Title"]%></a> 
+  <% end %>
+
+  <form action="/">
+    <button>Go Back</button>
+  </form>
